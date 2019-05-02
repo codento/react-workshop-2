@@ -85,7 +85,6 @@ footer div.heart-broken:before {
   font-size: 3em;
 }
 
-/*
 img {
   width: 12.5em;
   height: auto;
@@ -110,7 +109,6 @@ img {
   align-items: stretch;
   width: 100%;
 }
-*/
 
 @media only screen and (min-width: 426px) {
   img {
