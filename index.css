@@ -21,6 +21,11 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+img {
+  width: 12.5em;
+  height: auto;
+}
+
 .App {
   display: flex;
   flex-direction: column;
@@ -86,13 +91,8 @@ footer div.heart-broken:before {
   font-size: 3em;
 }
 
-img {
-  width: 12.5em;
-  height: auto;
-}
-.card-image {
-  border-radius: 0.25em;
-}
+/* STYLES FOR CONTENT: */
+
 .card-container {
   display: flex;
   flex-direction: column;
@@ -100,9 +100,15 @@ img {
   font-size: 1.5em;
   font-weight: 700;
   box-shadow: 0.10em 0.10em 3em #888888;
-  padding: 0.5em;
+  margin: 1em;
   border-radius: 0.25em; 
+  align-self: center;
 }
+
+.card-image {
+  border-radius: 0.25em;
+}
+
 .card-title {
   display: flex;
   flex-direction: row;
