@@ -1,0 +1,183 @@
+body {
+  background-color: #f0eff4;
+}
+
+a {
+  color: #0d8dbc;
+}
+
+header {
+  background-color: #e3e2e8;
+  background-image: url(../images/svg/PolyUp.svg);
+  background-repeat: no-repeat;
+  background-position: right -10px top -5px;
+  background-size: auto 7.5em;
+  padding: 1em;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-end;
+  height: 150px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.25);
+  z-index: 10;
+  transition: 0.2s;
+}
+
+footer {
+  min-height: 15em;
+  background-image: url(../images/svg/PolyFooterLeft.svg), url(../images/svg/PolyFooterRight.svg);
+  background-repeat: no-repeat;
+  background-position: left bottom, right bottom; 
+  background-size: auto 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: space-between;
+  padding: 2em 2em 1em 2em;
+  color: #FFF;
+  background-color: #1a0f3d;
+}
+
+a.footer-link {
+  color: #ffffff;
+  font: 'Lato';
+}
+
+ul.menu {
+  list-style: none;
+}
+
+
+.container {
+  display: flex;
+  flex-direction: row;
+  padding-right: 1em;
+  padding-bottom: 1em;
+  padding-top: 200px;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  width: calc(100vw * 0.75);
+  padding: 1em;
+}
+
+.sidebar {
+  background-image: url(../images/svg/PolyLeft.svg);
+  background-repeat: no-repeat;
+  background-position: -5px top;
+  background-size: 30% auto;
+  margin-top: -1em;
+  min-width: calc(100vw * 0.25);
+  min-height: calc(100vh - 175px);
+}
+
+
+.sidebar.open {
+  transition: 0.2s;
+  padding-left: 3em;
+  padding-top: 2em;
+}
+
+.sidebar.closed {
+  width: 0%;
+  transition: 0.2s;
+  display: none;
+}
+
+.button-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 175px;
+  background: transparent;
+}
+/* Wrappers for different SVG-elements */
+.cettugether-wrapper {
+  width: 5em;
+  bottom: 0;
+  transition: 0.2s;
+}
+
+.code-wrapper {
+  width: 10em;
+}
+
+/* Styles to shrink header */
+
+.shrink-button {
+  width: 2.5em;
+}
+
+.shrink-header {
+  height: 100px;
+  transition: 0.2s;
+}
+
+/* Menu-button's styles */
+
+.menu-button {
+  background-color: transparent;
+  color: #ff8429;
+  border: 0.1em solid #ff8429;
+  border-radius: 0.25em;
+  padding: 0.25em 0.5em 0 0.5em;
+}
+
+.menu-button.open {
+  background-color: #ff8429;
+  color: #1a0f3d;
+}
+
+/* Styles to get Codento-style H1 */
+.heading {
+  display: flex;
+  flex-direction: column;
+  justify-items: flex-start;
+  padding-bottom: 1em;
+}
+
+.underline {
+  height: 4px;
+  width: 90px;
+  background-color: #ff8429;
+}
+
+/* Helpers */
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+@media only screen and (max-width: 600px) {
+  .sidebar.open {
+    width: 100%;
+    margin-left: -1em;
+  }
+
+  .content{
+    width: calc(100vw - 2em);
+  }
+
+  .container {
+    padding-top: 175px;
+  }
+
+  .flex-column {
+    padding-top: 2em;
+  }
+
+  footer {
+    flex-direction: column;
+    background-image: url(../images/svg/PolyFooterRight.svg);
+    background-repeat: no-repeat;
+    background-position: right bottom; 
+  }
+}
